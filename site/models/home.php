@@ -19,10 +19,10 @@ class HomePage extends Page {
         'template' => 'article',
         'model'    => 'article',
         'content'  => [
-          'title'    => $article->title,
-          'byline'   => $article->byline,
-          'short_url'      => $article->short_url,
-          'abstract' => $article->abstract,
+          'short_url' => $article->short_url,
+          'title'     => $article->title,
+          'byline'    => $article->byline,
+          'abstract'  => $article->abstract,
         ]
       ];
     }
