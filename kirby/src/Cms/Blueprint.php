@@ -219,7 +219,7 @@ class Blueprint
      * @param string $name
      * @param string|null $fallback
      * @param \Kirby\Cms\Model $model
-     * @return self
+     * @return static|null
      */
     public static function factory(string $name, string $fallback = null, Model $model)
     {
@@ -375,7 +375,9 @@ class Blueprint
     protected function normalizeColumns(string $tabName, array $columns): array
     {
         foreach ($columns as $columnKey => $columnProps) {
+            // unset/remove column if its property is not array
             if (is_array($columnProps) === false) {
+                unset($columns[$columnKey]);
                 continue;
             }
 

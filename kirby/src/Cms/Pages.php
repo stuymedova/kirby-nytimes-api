@@ -23,11 +23,18 @@ use Kirby\Exception\InvalidArgumentException;
 class Pages extends Collection
 {
     /**
-     * Cache for the index
+     * Cache for the index only listed and unlisted pages
      *
      * @var \Kirby\Cms\Pages|null
      */
     protected $index = null;
+
+    /**
+     * Cache for the index all statuses also including drafts
+     *
+     * @var \Kirby\Cms\Pages|null
+     */
+    protected $indexWithDrafts = null;
 
     /**
      * All registered pages methods
@@ -42,7 +49,7 @@ class Pages extends Collection
      * current collection
      *
      * @param mixed $object
-     * @return self
+     * @return $this
      * @throws \Kirby\Exception\InvalidArgumentException
      */
     public function add($object)
@@ -139,7 +146,7 @@ class Pages extends Collection
      * @param array $pages
      * @param \Kirby\Cms\Model|null $model
      * @param bool $draft
-     * @return self
+     * @return static
      */
     public static function factory(array $pages, Model $model = null, bool $draft = false)
     {
@@ -331,24 +338,31 @@ class Pages extends Collection
      */
     public function index(bool $drafts = false)
     {
-        if (is_a($this->index, 'Kirby\Cms\Pages') === true) {
-            return $this->index;
+        // get object property by cache mode
+        $index = $drafts === true ? $this->indexWithDrafts : $this->index;
+
+        if (is_a($index, 'Kirby\Cms\Pages') === true) {
+            return $index;
         }
 
-        $this->index = new Pages([], $this->parent);
+        $index = new Pages([], $this->parent);
 
         foreach ($this->data as $pageKey => $page) {
-            $this->index->data[$pageKey] = $page;
-            $index = $page->index($drafts);
+            $index->data[$pageKey] = $page;
+            $pageIndex = $page->index($drafts);
 
-            if ($index) {
-                foreach ($index as $childKey => $child) {
-                    $this->index->data[$childKey] = $child;
+            if ($pageIndex) {
+                foreach ($pageIndex as $childKey => $child) {
+                    $index->data[$childKey] = $child;
                 }
             }
         }
 
-        return $this->index;
+        if ($drafts === true) {
+            return $this->indexWithDrafts = $index;
+        }
+
+        return $this->index = $index;
     }
 
     /**
@@ -375,7 +389,7 @@ class Pages extends Collection
      * Include all given items in the collection
      *
      * @param mixed ...$args
-     * @return self
+     * @return $this|static
      */
     public function merge(...$args)
     {

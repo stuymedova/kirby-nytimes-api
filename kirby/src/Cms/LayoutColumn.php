@@ -7,6 +7,7 @@ use Kirby\Toolkit\Str;
 /**
  * Represents a single layout column with
  * multiple blocks
+ * @since 3.5.0
  *
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
@@ -52,6 +53,31 @@ class LayoutColumn extends Item
     public function blocks()
     {
         return $this->blocks;
+    }
+
+    /**
+     * Checks if the column is empty
+     * @since 3.5.2
+     *
+     * @return bool
+     */
+    public function isEmpty(): bool
+    {
+        return $this
+            ->blocks()
+            ->filter('isHidden', false)
+            ->count() === 0;
+    }
+
+    /**
+     * Checks if the column is not empty
+     * @since 3.5.2
+     *
+     * @return bool
+     */
+    public function isNotEmpty(): bool
+    {
+        return $this->isEmpty() === false;
     }
 
     /**

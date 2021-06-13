@@ -67,7 +67,7 @@
   "error.file.changeName.permission": "Du har inte behörighet att ändra namnet på \"{filename}\"",
   "error.file.duplicate": "En fil med namnet \"{filename}\" existerar redan",
   "error.file.extension.forbidden": "Filändelsen \"{extension}\" är inte tillåten",
-  "error.file.extension.invalid": "Invalid extension: {extension}",
+  "error.file.extension.invalid": "Ogiltig filändelse: {extension}",
   "error.file.extension.missing": "Filen \"{filename}\" saknar filändelse",
   "error.file.maxheight": "Bildens höjd får inte överstiga {height} pixlar",
   "error.file.maxsize": "Filen är för stor",
@@ -83,7 +83,7 @@
   "error.file.notFound": "Filen  \"{filename}\" kan ej hittas",
   "error.file.orientation": "Bildens orientering måste vara \"{orientation}\"",
   "error.file.type.forbidden": "Du har inte behörighet att ladda upp filer av typen {type}",
-  "error.file.type.invalid": "Invalid file type: {type}",
+  "error.file.type.invalid": "Ogiltig filtyp: {type}",
   "error.file.undefined": "Filen kan inte hittas",
 
   "error.form.incomplete": "Vänligen åtgärda alla formulärfel...",
@@ -93,8 +93,8 @@
   "error.language.duplicate": "Språket finns redan",
   "error.language.name": "Ange ett giltigt namn för språket",
 
-  "error.layout.validation.block": "There's an error in block {blockIndex} in layout {layoutIndex}",
-  "error.layout.validation.settings": "There's an error in layout {index} settings",
+  "error.layout.validation.block": "Det finns ett fel i block {blockIndex} i layout {layoutIndex}",
+  "error.layout.validation.settings": "Det finns ett fel i inställningarna för layout {index}",
 
   "error.license.format": "Ange en giltig licensnyckel",
   "error.license.email": "Ange en giltig e-postadress",
@@ -118,7 +118,7 @@
   "error.page.duplicate.permission": "Du har inte behörighet att duplicera \"{slug}\"",
   "error.page.notFound": "Sidan \"{slug}\" kan inte hittas",
   "error.page.num.invalid": "Ange ett giltigt nummer för sortering. Numret får inte vara negativt.",
-  "error.page.slug.invalid": "Ange ett giltigt URL-prefix",
+  "error.page.slug.invalid": "Please enter a valid URL appendix",
   "error.page.slug.maxlength": "Permalänkens längd måste vara kortare än \"{length}\" tecken",
   "error.page.sort.permission": "Sidan \"{slug}\" kan inte sorteras",
   "error.page.status.invalid": "Sätt en giltig status för sidan",
@@ -163,6 +163,7 @@
   "error.user.password.invalid": "Ange ett giltigt lösenord. Lösenordet måste vara minst 8 tecken långt.",
   "error.user.password.notSame": "Lösenorden matchar inte",
   "error.user.password.undefined": "Användaren har inget lösenord",
+  "error.user.password.wrong": "Wrong password",
   "error.user.role.invalid": "Ange en giltig roll",
   "error.user.update.permission": "Du har inte behörighet att uppdatera användaren \"{name}\"",
 
@@ -232,6 +233,7 @@
   "field.blocks.image.name": "Bild",
   "field.blocks.image.placeholder": "Välj en bild",
   "field.blocks.image.ratio": "Bildförhållande",
+  "field.blocks.image.url": "Bild-URL",
   "field.blocks.list.name": "Punktlista",
   "field.blocks.markdown.name": "Markdown",
   "field.blocks.markdown.label": "Text",
@@ -370,9 +372,11 @@
   "more": "Mer",
   "name": "Namn",
   "next": "Nästa",
+  "no": "no",
   "off": "av",
   "on": "på",
   "open": "Öppna",
+  "open.newWindow": "Open in new window",
   "options": "Alternativ",
   "options.none": "Inga alternativ",
 
@@ -464,7 +468,9 @@
   "toolbar.button.file.select": "Välj en fil",
   "toolbar.button.file.upload": "Ladda upp en fil",
   "toolbar.button.link": "L\u00e4nk",
+  "toolbar.button.strike": "Strike-through",
   "toolbar.button.ol": "Sorterad lista",
+  "toolbar.button.underline": "Underline",
   "toolbar.button.ul": "Punktlista",
 
   "translation.author": "Kirby-teamet, Ola Christensson",
@@ -516,5 +522,6 @@
   "view.users": "Anv\u00e4ndare",
 
   "welcome": "Välkommen",
-  "year": "År"
+  "year": "År",
+  "yes": "yes"
 }

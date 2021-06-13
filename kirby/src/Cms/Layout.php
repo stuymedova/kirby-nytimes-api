@@ -5,6 +5,7 @@ namespace Kirby\Cms;
 /**
  * Represents a single Layout with
  * multiple columns
+ * @since 3.5.0
  *
  * @package   Kirby Cms
  * @author    Bastian Allgeier <bastian@getkirby.com>
@@ -73,6 +74,33 @@ class Layout extends Item
     public function columns()
     {
         return $this->columns;
+    }
+
+    /**
+     * Checks if the layout is empty
+     * @since 3.5.2
+     *
+     * @return bool
+     */
+    public function isEmpty(): bool
+    {
+        return $this
+            ->columns()
+            ->filter(function ($column) {
+                return $column->isNotEmpty();
+            })
+            ->count() === 0;
+    }
+
+    /**
+     * Checks if the layout is not empty
+     * @since 3.5.2
+     *
+     * @return bool
+     */
+    public function isNotEmpty(): bool
+    {
+        return $this->isEmpty() === false;
     }
 
     /**

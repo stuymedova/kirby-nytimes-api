@@ -67,7 +67,7 @@
   "error.file.changeName.permission": "Anda tidak diizinkan mengubah nama berkas \"{filename}\"",
   "error.file.duplicate": "Berkas dengan nama \"{filename}\" sudah ada",
   "error.file.extension.forbidden": "Ekstensi \"{extension}\" tidak diizinkan",
-  "error.file.extension.invalid": "Invalid extension: {extension}",
+  "error.file.extension.invalid": "Ekstensi tidak valid: {extension}",
   "error.file.extension.missing": "Berkas \"{filename}\" harus memiliki ekstensi",
   "error.file.maxheight": "Tinggi gambar tidak boleh melebihi {height} piksel",
   "error.file.maxsize": "Berkas terlalu besar",
@@ -83,7 +83,7 @@
   "error.file.notFound": "Berkas \"{filename}\" tidak dapat ditemukan",
   "error.file.orientation": "Orientasi gambar harus \"{orientation}\"",
   "error.file.type.forbidden": "Anda tidak diizinkan mengunggah berkas dengan tipe {type}",
-  "error.file.type.invalid": "Invalid file type: {type}",
+  "error.file.type.invalid": "Tipe berkas tidak valid: {type}",
   "error.file.undefined": "Berkas tidak dapat ditemukan",
 
   "error.form.incomplete": "Pastikan semua bidang telah diisi dengan benar…",
@@ -93,8 +93,8 @@
   "error.language.duplicate": "Bahasa sudah ada",
   "error.language.name": "Masukkan nama bahasa yang valid",
 
-  "error.layout.validation.block": "There's an error in block {blockIndex} in layout {layoutIndex}",
-  "error.layout.validation.settings": "There's an error in layout {index} settings",
+  "error.layout.validation.block": "Ada kesalahan di blok {blockIndex} di tata letak {layoutIndex}",
+  "error.layout.validation.settings": "Ada kesalahan di pengaturan tata letak {index}",
 
   "error.license.format": "Masukkan kode lisensi yang valid",
   "error.license.email": "Masukkan surel yang valid",
@@ -118,7 +118,7 @@
   "error.page.duplicate.permission": "Anda tidak diizinkan menduplikasi \"{slug}\"",
   "error.page.notFound": "Halaman \"{slug}\" tidak dapat ditemukan",
   "error.page.num.invalid": "Masukkan nomor urut yang valid. Nomor tidak boleh negatif.",
-  "error.page.slug.invalid": "Masukkan awalan URL yang valid",
+  "error.page.slug.invalid": "Masukkan akhiran URL yang valid",
   "error.page.slug.maxlength": "Panjang slug harus kurang dari \"{length}\" karakter",
   "error.page.sort.permission": "Halaman \"{slug}\" tidak dapat diurutkan",
   "error.page.status.invalid": "Atur status halaman yang valid",
@@ -163,6 +163,7 @@
   "error.user.password.invalid": "Masukkan sandi yang valid. Sandi setidaknya mengandung 8 karakter.",
   "error.user.password.notSame": "Sandi tidak cocok",
   "error.user.password.undefined": "Pengguna tidak memiliki sandi",
+  "error.user.password.wrong": "Kata sandi salah",
   "error.user.role.invalid": "Masukkan peran yang valid",
   "error.user.update.permission": "Anda tidak diizinkan memperbaharui pengguna \"{name}\"",
 
@@ -232,6 +233,7 @@
   "field.blocks.image.name": "Gambar",
   "field.blocks.image.placeholder": "Pilih gambar",
   "field.blocks.image.ratio": "Rasio",
+  "field.blocks.image.url": "URL Gambar",
   "field.blocks.list.name": "Daftar",
   "field.blocks.markdown.name": "Markdown",
   "field.blocks.markdown.label": "Teks",
@@ -370,9 +372,11 @@
   "more": "Lebih lanjut",
   "name": "Nama",
   "next": "Selanjutnya",
+  "no": "tidak",
   "off": "mati",
   "on": "hidup",
   "open": "Buka",
+  "open.newWindow": "Buka di jendela baru",
   "options": "Opsi",
   "options.none": "Tidak ada opsi",
 
@@ -464,7 +468,9 @@
   "toolbar.button.file.select": "Pilih berkas",
   "toolbar.button.file.upload": "Unggah berkas",
   "toolbar.button.link": "Tautan",
+  "toolbar.button.strike": "Coret",
   "toolbar.button.ol": "Daftar berurut",
+  "toolbar.button.underline": "Garis bawah",
   "toolbar.button.ul": "Daftar tidak berurut",
 
   "translation.author": "Tim Kirby",
@@ -516,5 +522,6 @@
   "view.users": "Pengguna",
 
   "welcome": "Selamat datang",
-  "year": "Tahun"
+  "year": "Tahun",
+  "yes": "ya"
 }

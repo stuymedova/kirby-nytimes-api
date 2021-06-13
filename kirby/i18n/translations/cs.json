@@ -67,7 +67,7 @@
   "error.file.changeName.permission": "Nemáte povoleno změnit jméno souboru \"{filename}\"",
   "error.file.duplicate": "Soubor s názvem \"{filename}\" již existuje",
   "error.file.extension.forbidden": "Přípona souboru \"{extension}\" není povolena",
-  "error.file.extension.invalid": "Invalid extension: {extension}",
+  "error.file.extension.invalid": "Neplatná přípona souboru: {extension}",
   "error.file.extension.missing": "Nem\u016f\u017eete nahr\u00e1t soubor bez p\u0159\u00edpony",
   "error.file.maxheight": "Výška obrázku nesmí přesáhnout {height} pixelů",
   "error.file.maxsize": "Soubor je příliš velký",
@@ -83,7 +83,7 @@
   "error.file.notFound": "Soubor se nepoda\u0159ilo nal\u00e9zt",
   "error.file.orientation": "Orientace obrázku másí být \"{orientation}\"",
   "error.file.type.forbidden": "Nemáte povoleno nahrávat soubory typu {type} ",
-  "error.file.type.invalid": "Invalid file type: {type}",
+  "error.file.type.invalid": "Neplatný typ souboru: {type}",
   "error.file.undefined": "Soubor se nepoda\u0159ilo nal\u00e9zt",
 
   "error.form.incomplete": "Prosím opravte všechny chyby ve formuláři",
@@ -93,8 +93,8 @@
   "error.language.duplicate": "Jazyk již existuje",
   "error.language.name": "Zadejte prosím platné jméno jazyka",
 
-  "error.layout.validation.block": "There's an error in block {blockIndex} in layout {layoutIndex}",
-  "error.layout.validation.settings": "There's an error in layout {index} settings",
+  "error.layout.validation.block": "Chyba v bloku {blockIndex} v rozvržení {layoutIndex}",
+  "error.layout.validation.settings": "Chyba v nastavení rozvržení {index}",
 
   "error.license.format": "Zadejte prosím platné licenční číslo",
   "error.license.email": "Zadejte prosím platnou emailovou adresu",
@@ -118,7 +118,7 @@
   "error.page.duplicate.permission": "Nemáte dovoleno duplikovat \"{slug}\"",
   "error.page.notFound": "Str\u00e1nku se nepoda\u0159ilo nal\u00e9zt.",
   "error.page.num.invalid": "Zadejte prosím platné pořadové číslo. Čísla nesmí být záporná.",
-  "error.page.slug.invalid": "Zadejte prosím platnou předponu URL",
+  "error.page.slug.invalid": "Please enter a valid URL appendix",
   "error.page.slug.maxlength": "URL musí mít méně než \"{length}\" znaků",
   "error.page.sort.permission": "Stránce \"{slug}\" nelze změnit pořadí",
   "error.page.status.invalid": "Nastavte prosím platný status stránky",
@@ -163,6 +163,7 @@
   "error.user.password.invalid": "Zadejte prosím platné heslo. Heslo musí být dlouhé alespoň 8 znaků.",
   "error.user.password.notSame": "Pros\u00edm potvr\u010fte heslo",
   "error.user.password.undefined": "Uživatel nemá nastavené heslo.",
+  "error.user.password.wrong": "Wrong password",
   "error.user.role.invalid": "Zadejte prosím platnou roli",
   "error.user.update.permission": "Nemáte dovoleno upravit uživatele \"{name}\"",
 
@@ -232,6 +233,7 @@
   "field.blocks.image.name": "Obrázek",
   "field.blocks.image.placeholder": "Vyberte obrázek",
   "field.blocks.image.ratio": "Poměr stran",
+  "field.blocks.image.url": "URL obrázku",
   "field.blocks.list.name": "Seznam",
   "field.blocks.markdown.name": "Markdown",
   "field.blocks.markdown.label": "Text",
@@ -370,9 +372,11 @@
   "more": "Více",
   "name": "Jméno",
   "next": "Další",
+  "no": "no",
   "off": "vypnuto",
   "on": "zapnuto",
   "open": "Otevřít",
+  "open.newWindow": "Open in new window",
   "options": "Možnosti",
   "options.none": "Žádné možnosti",
 
@@ -464,7 +468,9 @@
   "toolbar.button.file.select": "Vyberte soubor",
   "toolbar.button.file.upload": "Nahrajte soubor",
   "toolbar.button.link": "Odkaz",
-  "toolbar.button.ol": "Řazený seznam",
+  "toolbar.button.strike": "Strike-through",
+  "toolbar.button.ol": "Číslovaný seznam",
+  "toolbar.button.underline": "Underline",
   "toolbar.button.ul": "Odrážkový seznam",
 
   "translation.author": "Kirby tým",
@@ -516,5 +522,6 @@
   "view.users": "U\u017eivatel\u00e9",
 
   "welcome": "Vítejte",
-  "year": "Rok"
+  "year": "Rok",
+  "yes": "yes"
 }
