@@ -18,7 +18,7 @@ Kirby CMS + content fetched from The New York Times Top Stories API
         └── home.php
 ```
 
-## Prerequesites
+## Prerequisites
 
 - [PHP](https://www.php.net)
 - [Composer](https://getcomposer.org)
