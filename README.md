@@ -2,8 +2,32 @@
 
 Kirby CMS + content fetched from The New York Times Top Stories API
 
+## Overview
+
+```
+.
+├── content
+│   └── home
+│       └── home.txt
+└── site
+    ├── config
+    │   └── config.php
+    ├── models
+    │   └── home.php
+    └── templates
+        └── home.php
+```
+
+## Prerequesites
+
+- [PHP](https://www.php.net)
+- [Composer](https://getcomposer.org)
+
 ## Setup
 
-1. Add an API key to `site/models/home.php` [ https://developer.nytimes.com/get-started ]
-2. Run `composer install`
-3. Run `php -S localhost:8000 kirby/router.php`
+1. Add an [API key](https://developer.nytimes.com/get-started) to `site/models/home.php`
+2. Run in terminal:
+```
+composer install
+composer start
+```
